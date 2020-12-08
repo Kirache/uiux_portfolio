@@ -1,0 +1,489 @@
+/* Put your style information here! */
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+button {
+	color: dark grey;
+	background: none;
+	border: none;
+}
+
+h1 {
+	display: flex;
+	font-size: 22px;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	text-align: left;
+	padding: 8px;
+	vertical-align: top;
+}
+
+/* Header */
+.header {
+	display: flex;
+    height: 70px;
+	width: 90%;
+	max-width: 1000px;
+    justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	font-weight: 300;
+}
+
+.nav-button {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.nav-button:hover {
+	border-bottom: solid 3px white;
+}
+
+.head-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #FFAD4D;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	background-color: #FFAD4D;
+	height: 50px;
+}
+
+.icon {
+	height: 20px;
+	width: auto;
+	background: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-top: 2px;
+}
+
+.logo {
+	height: 40px;
+}
+
+.header-section-left {
+	margin-right: auto;
+	padding-left: 10px;
+}
+
+/* Main Content */
+.content-container {
+	display: flex;
+	width: 90%;
+	max-width: 1000px;
+	margin: 70px auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.bookmark:hover {
+	color: #FFAD4D;
+}
+
+.comment:hover {
+	color: #FFAD4D;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 17px;
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.info-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 30%;
+}
+
+.tag-button {
+	padding: 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	border-radius: 30px;
+	background-color: #FFCF96;
+	color: black;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.tag-button:hover {
+	background-color: #FFAD4D;
+}
+
+.info-right {
+	margin-left: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 70%;
+}
+
+.read-button {
+	color: black;
+	padding: 4px 7px;
+	display: inline-block;
+	background-color: #FFCF96;
+	margin-top: 2px;
+}
+
+.read-button:hover {
+	background-color: #FFAD4D;
+}
+
+.info-top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.checked {
+	color: #FFA500;
+}
+
+.chapters {
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 90%;
+	max-width: 1000px;
+	margin: 70px auto;
+	margin-top: 40px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.color-back {
+	margin-top: 60px;
+	width: 100vw;
+	background-color: #FFECD6;
+	display: flex;
+	justify-content: center;
+}
+
+.more-chapters {
+	display: none;
+}
+
+.suggestions{
+	margin-top: 50px;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	flex-wrap:wrap;
+}
+
+.discussion {
+	margin-top: 40px;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.single-comment {
+    display: flex;
+    background-color: white;
+    min-height: 60px;
+    width: 100%;
+}
+
+.single-comment-more {
+    display: none;
+    background-color: white;
+    min-height: 60px;
+    width: 100%;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    min-height: 42px;
+    margin-top: 1px;
+    border: 6px solid white;
+    margin-left: 2px;
+}
+
+.comment-right {
+	margin-left : 7px;
+    padding-bottom: 30px;
+    padding-top: 4px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.profile-info {
+	padding-bottom: 4px;
+}
+
+.comment-info {
+    line-height: 25px;
+}
+
+.row-flex {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.manhwa {
+	display: flex;
+	flex-direction: column;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 20%;
+}
+
+.manhwa:hover {
+	background-color: #ddd;
+}
+
+.manhwa a {
+	color:black;
+}
+
+.suggested-image {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.discussion a {
+	color:black;
+}
+
+#main-cover {
+	width: 100%;
+}
+
+#flag {
+	width: 30px;
+	height: auto;
+	margin-left: 10px;
+	margin-right: 20px;
+	border: solid 2px black;
+}
+
+#donate {
+	padding: 10px 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+	border-radius: 30px;
+	background-color: white;
+	color: black;
+	display: inline-block;
+	align-self: center;
+	margin-top: 10px;
+	border: 2px solid black;
+}
+
+#donate:hover {
+	background-color: #ddd;
+}
+
+#chapter-table {
+	line-height: 200%;
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+
+#chapter-table tr:nth-child(odd){
+	background-color: #FFCF96;
+}
+
+#chapter-table tr:hover {
+	background-color: #ddd;
+}
+
+#hamburger {
+	display: none;
+}
+
+#links {
+	width: 100%;
+	display: none;
+	background-color: #FFCF96;
+}
+
+#links a {
+	color: black;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+}
+
+#tag-donate {
+	margin-top: 25px;
+}
+
+#star-chapter {
+	flex-shrink: 0;
+}
+
+@media only screen and (max-width: 900px) {
+	.nav-button {
+	 	display: none;
+	}
+
+	.info-top {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+
+	.suggested-image {
+		height: 150px;
+	}
+
+	#bookmark-comment {
+		margin-top: 7px;
+	}
+
+	#hamburger {
+	  	display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	input {
+	  	width: 40%;
+	}
+
+	.row-flex {
+	  	flex-wrap: wrap;
+	}
+
+	.manhwa {
+	  	width: 30%;
+	}
+
+	.info {
+	  	flex-direction: column;
+	}
+
+	.content-container {
+		margin-top: 20px;
+	}
+
+	.info-left {
+		flex-direction: row;
+		width: 100%;
+		align-items: center;
+	}
+
+	.nav-button-bot {
+		font-size: 0.5em;
+	}
+
+	.info-top {
+		width: 100%;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.info-right {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.tag-button {
+		padding: 5px 10px;
+		font-size: 10px;
+	}
+
+	.logo {
+		width: 100px;
+		height: 100%;
+	}
+
+	.title {
+		text-align: left;
+		margin-bottom: 0px;
+	}
+
+	.title h1 {
+		text-align: left;
+		font-size: 15px;
+		margin: 0px 0px;
+	}
+
+	.suggested-image {
+		height: 120px;
+	}
+
+	#donate {
+		padding: 7px 10px;
+		font-size: 14px;
+	}
+
+	#main-cover {
+		width: 40%;
+	}
+
+	#tag-donate {
+		margin-left: 10px;
+		padding-right: 10px;
+		width: 60%;
+	}
+}

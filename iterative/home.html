@@ -1,1 +1,224 @@
+<!doctype html>
 
+<html>
+  <head>
+    <title>Iterative Design: Ladder</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Deployment Link: https://fathomless-castle-93898.herokuapp.com-->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <h1>Iterative Design: Ladder</h1>
+    <h2>What steps are required to transform an idea into a usable interface?</h2>
+    <div class="overview">
+      <h3>Overview</h3>
+      <p>
+        In this project, we have taken an early-stage startup idea from the 
+        <a target="_blank" rel="noopener noreferrer" href="https://techcrunch.com/2020/08/25/here-are-the-94-companies-from-y-combinators-summer-2020-demo-day-2/">
+          2020 YCombinator's Demo Day</a> and iteratively designed a web interface strictly based 
+          on the concept. This process included:
+          <ul>
+            <li>Creating basic sketches</li>
+            <li>Combining the ideas from the sketches into a low-fidelity wireframe</li>
+            <li>Incorporating visual design elements to form a high-fidelity prototype</li>
+            <li>Undergoing critique and feedback in order to improve upon the high-fidelity prototype</li>
+            <li>Performing user testing to evaluate user experience of our interface</li>
+          </ul>
+      </p>
+      <h3>Ladder</h3>
+      <p>
+        Ladder is a construction-based labor marketplace that seeks to connect employees and employers in order to
+        provide long-term employment. Techcrunch describes Ladder in the following statement:
+
+        <h5>Building a labor marketplace to help construction companies hire skilled workers for permanent positions.
+          Essentially, Ladder works as an HR team that construction companies can turn to for hiring and retention
+          needs. It has 1,340 workers on the platform and booked $12,200 in revenue in the first month of launch.</h5>
+      </p>
+
+      <h2>Basic Sketches</h2>
+      <h3>Pre-Design Thinking</h3>
+      <p>
+        We decided to create a web interface for this project because we envisioned Ladder to primarily be a website; 
+        the tasks that a Ladder user would want to perform (i.e. hiring, job searching, etc.) are done on a 
+        computer within a typical user's mental model. 
+      </p>
+      
+      <p>
+        We imagined that Ladder would be used on both sides of the hiring process. Thus, we wanted
+        to make the interface such that it was effectively facing both of the prospective user groups: employees and employers.
+      </p>
+
+      <h3>Sketching</h3>
+      <p>
+        We created 4 sketches based on distinct visions of the interface.
+      </p>
+      
+
+      <div class="sketch-images">
+        <figure>
+          <img src="sketches/sketch1.png" id="sketch1" alt="Sketch 1"/>
+					<figcaption>
+            This sketch encapsulates a interface idea where only employers can make posts, like a listings
+            website. We also wanted to go with a minimalist home page for user interface purposes.
+					</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="sketches/sketch2.png" id="sketch2" alt="Sketch 2"/>
+					<figcaption>
+            This sketch is an efficiency-focused interface where we wanted the user to immediately be able
+            to view the listings from the home page. We expected that all types of postings would exist
+            on this listings page, and the user would be able to filter based on their needs.
+          </figcaption>
+        </figure>
+        
+        <figure>
+          <img src="sketches/sketch3.png" id="sketch3" alt="Sketch 3"/>
+					<figcaption>
+            This sketch aims to clearly separate the work flows for employers and employees. It is a very
+            segregated interface model where each user group would have their own space. 
+					</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="sketches/sketch4.png" id="sketch4" alt="Sketch 4"/>
+					<figcaption>
+            This sketch demonstrates an interface that is very user centered and public facing in the sense
+            that it provides a more simplified listings and profile pages. The interface would likely be
+            the easiest to transfer into a mobile interface.
+
+					</figcaption>
+				</figure>
+       
+      </div>
+
+      <h2>Low-Fidelity Wireframe</h2>
+      
+      <p>
+        We combined the ideas from the above sketches into the following low-fidelity wireframe:
+      </p>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FY5uq8y9lDHGp5EdiT4mahc%2FLow-Fidelity-Wireframes%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+
+      <h2>High-Fidelity Prototype</h2>
+      <h3>Original High-Fidelity Prototype</h3>
+      <p>
+        Below is our original high-fidelity prototype that incorporates visual design elements into the functionality
+        from our low-fidelity wireframe:
+      </p>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fnu8rOp4WaoqQQYB602eA4Z%2FHigh-Fidelity-Wireframes" allowfullscreen></iframe>
+      
+      <h3>Iterative Feedback</h3>
+      <p>
+        Our original prototype received the following feedback from our mockup critic studio. Our changes 
+        in response to this feedback is addressed in the sub-bullets from the list.
+        <ul>
+          <li>Employees should be categorized for searching purposes</li>
+            <li class="sub">We added a occupation type categorization for employees</li>
+          <li>Employee names not as important for employer search (would rather have a job description)</li>
+            <li class="sub">We emphasized the employee categorization over the employee names in
+            the listings search page</li>
+          <li>Might want to save a job or come back to it before you publish</li>
+            <li class="sub">We added save, publish, and unpublish features for our jobs</li>
+          <li>Job listing and employees pages look similar with similar layout (confusing to which side you are on at first glance)</li>
+            <li class="sub">We changed the color schemes of employee vs. employer listing and search functionalities</li>
+          <li>Scrolling down for mission statement is not accessible (and not really important for functionality)</li>
+            <li class="sub">We removed the mission statement from our home page because it was not essential to the functionality for the webpage</li>
+          <li>Why would you want to go see the employee page for “View” (is the employee public profile page necessary)</li>
+            <li class="sub">We removed the publicly accessible page for employees and changed the view button to a contact button in order to reduce complexity and confusion</li>
+        </ul>
+      </p>
+
+      <h3>Improved High-Fidelity Prototype</h3>
+      
+      <p>We accounted for the above constructive criticism in the following improved high-fidelity prototype:</p>
+
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJPUGzeAedcOaueRPpDMIlo%2FImproved-High-Fidelity-Wireframes" allowfullscreen></iframe>
+
+      <h2>User Testing</h2>
+
+      <p>
+        We conducted user testing to evaluate user experience which would give us insight to areas of improvement for future
+        interface development. We prompted our users with the following section and then gave them 4 subtasks to complete:
+      </p>
+
+      <div class="tab">
+        <h5>
+          You will be examining a prototype (through Figma) of a website that acts as a labor marketplace for 
+          construction workers and companies. Therefore, imagine that you are an employer who wants to sign
+          up and utilize our service in order to find employees. Note that this is not an actual website but
+          an interactive mockup made on a prototyping software, so there are limitations to what you can do
+          with the prototype. If you are unsure where to click, click an empty spot on the screen and blue
+          boxes will blink where there are clickable locations. You will not be able to actually interact
+          with the fields; just focus on navigating through the interface for the tasks!
+          </h5>
+      </div>
+      
+
+
+      <h4>
+      Sub Tasks:
+      </h4>
+      <ul>
+        <li>Sign up as an employer</li>
+        <li>Mock "edit" your profile</li>
+        <li>Create a job posting</li>
+        <li>Search for employees</li>
+      </ul>
+       
+
+      <h4>User Test 1</h4>
+      <video controls> <source src="testing/test1.mp4" type=video/mp4>    </video>
+
+      <h4>User Test 2</h4>
+      <video controls> <source src="testing/test2.mp4" type=video/mp4>    </video>
+  
+
+      <h4>User Test 3</h4>
+      <video controls> <source src="testing/test3.mp4" type=video/mp4>    </video>
+      
+      <p>
+        This user unfortunately did not record the prototype interface as she was interacting with it,
+        but we were able to ascertain her actions by her speech.
+      </p>
+
+      <h3>Testing Results</h3>
+      <p>
+        Our user testing results were largely inline with our overall expectation; for most of the sub tasks,
+        users were able to quickly do what was asked of them. 
+
+      </p>
+        
+      <p>
+        One thing users struggled with was knowing how
+        to search for employees when on the employer profile page. From this, we know that the search bar likely
+        needs to be added to the profile editing pages if development were to occur farther. The reason why this was not
+        added initially was because we expected that users would save the profile and be able to search from there, but
+        now we know that it would be better to have the search bar directly on the editing page and likely have a pop-up
+        warning ensuring that the users saved their profile before leaving the page. 
+      </p>
+        
+        
+       <p>
+        Another issue identified was that 
+        the save button for the Jobs section on the editing profile page was confused with the overall save button for
+        this page. We realize this could be a point of confusion, and to address this, we would either move the Jobs
+        section to a different page or change the phrasing and structure of the buttons on the Jobs section make it more clear.
+  
+      </p>
+
+      <h2>Development</h2>
+      After receiving feedback from the above users and the co-founder of the real Ladder startup, we have created and deployed
+      a functional web application based on our design. Our application was created
+      using a React frontend and a Node.js backend, along with a PostgreSQL database. Additionally, it includes many features such
+      as user authentication, search functionality, individualized accounts and profiles, and responsive design.
+      <a target="_blank" rel="noopener noreferrer" href="https://protected-bastion-57623.herokuapp.com">
+        <h4>Deployment Link</h4></a>
+      
+
+      <h2>Conclusions</h2>
+      Throughout all of these steps, we believe we have arrived at an effective user interface for Ladder, and we hope that you
+      have gained some insights on the steps that are required to transform an idea into a usable interface
+    </div>
+  </body>
+</html>
