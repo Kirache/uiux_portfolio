@@ -1,0 +1,190 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>MANHWATOP Redesign</title>
+        <html lang="en">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="redesign.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+    </head>
+    <body>
+        <a name="top"></a>
+        <a id="arrow" href="#TOP"><img src="./images/backtotop.png"></img></a>
+        <div class="centerer">
+            <div class="top-section">
+                <div class="navbar">
+                    <a class="navbutton1" href="./home.html">Tiffany Zhang</a>
+                    <div class="grey">
+                    <a class="navbutton2" href="./home.html">Projects</a>
+                    <a class="navbutton2" href="./home.html">About</a>
+                    <a class="navbutton2" href="./home.html">Resume</a>
+                    </div>
+                </div>
+                <h2 id="title">Responsive Redesign : MANHWATOP</h2>
+                <img id="webimage" src="./images/manhwa.png"></img>
+                <a class="weblink" id="first-weblink" href="./MANHWATOP/home.html">
+                <button>View Project Website</button></a>
+            </div>
+            <div class="column-flex">
+                <div class="section" id="header">
+                    <h1>Redesign Process</h1>
+
+                    <p>My friends and I are avid readers of manhwa, or Korean comics. One website we use often is MANHWATOP, so I
+                    decided to try to improve and redesign their manhwa page.</p>
+
+                    <p>Specifically, I am using the manhwa page of "Survive as the Hero's Wife," although all manhwa pages
+                        on the site are formatted the same.</p>
+
+                    <p class="description"><a href="https://manhwatop.com/manga/survive-as-the-heros-wife">https://manhwatop.com/manga/survive-as-the-heros-wife</a></p>
+                    <img class="redesign-img" src="./images/original-site.png" alt="Manhwa Top Website">
+                </div>
+
+                <!-- Problems -->
+                <div class="section">
+                    <h1>Usability Problems</h1>
+
+                    <p>To determine how to improve the website, I first had to identify problems to fix.
+                    </p>
+
+                    <p>I identified usability, learnability, memorability and efficiency problems based on
+                        my analysis and previous complaints from friends. Here is a summary of some problems : </p>
+
+                    <img class="redesign-img" src="./images/header-problems.png" alt="Header Problems">
+
+                    <img class="redesign-img" src="./images/info-section-problems.png" alt="Info Section Problems">
+
+                    <img class="redesign-img" src="./images/tag-problems.png" alt="Tag Problems">
+
+                    <img class="redesign-img" src="./images/bottom-problems.png" alt="Bottom Problems">
+
+                    <br><br>
+
+                    <div class="blue-box">
+                        Additional Problems :
+                        <ul>
+                            <li>“REQUEST?” menu option name is unclear</li>
+
+                            <li>The menu bar that pops up when you scroll up blocks content and irritates many users, as this is an
+                                information page people often scroll back and forth on</li>
+
+                            <li>After clicking on “Show More” on chapters it becomes tedious to return to the top of the page with 100+ chapters in the way</li>
+
+                            <li>“BLOG” leads you to a page displaying suggested or new manhwa, and not to a blog</li>
+
+                            <li>There are 3 different recommendation sections on the page, which is a bit much and distracts from
+                                the information about the manhwa the page is focused on</li>
+
+                            <li>The “YOU MAY ALSO LIKE” section is important but is placed at the very bottom where it is hard to find</li>
+
+                            <li>A very large amount of comments are shown before "Load more comments" option, making it difficult to reach the bottom of the page.
+                                 (This not apparent on this specific manhwa's page as there are not many comments, but is an issue when there are). There is also no
+                                 way to show less comments after pressing "load more comments," making it difficult to reach the top of the page.
+                            </li>
+                        </ul>
+                    </div>
+                    <br><br>
+
+                    <h2>Accessibility</h2>
+                    <p>I assessed accessibility with the help of WebAIM WAVE and VoiceOver.</p>
+                    <p>A large portion of the website is light grey text on light grey or white background, causing a lot of contrast errors.
+                        WAVE detected 155 contrast errors. WAVE also found 7 elements that were missing alternative text describing them,
+                        making it difficult for users using screen readers to determine their functions. When testing the website with VoiceOver
+                        on Safari, I struggled with the navigation bar because there are dropdown options under “MANGA LIST” and “BLOG,” but
+                        this was not announced to me so I have no way of knowing they exist and cannot navigate to them without moving my mouse
+                        cursor to them.</p>
+                </div>
+
+                <!-- Visual Redesign -->
+                <div class="section">
+                    <h1>Visual Redesign</h1>
+
+                    <!-- Lofi -->
+                    <h2>Low-Fidelity Wireframing</h2>
+                    <p>I first redesigned the page visually by making a set of low-fidelity wireframes for desktop, tablet, and mobile using Basalmiq.</p>
+
+                    <p class="description">Desktop</p>
+                    <img src="./images/lowfi-desktop.png" alt="Low Fidelity Desktop Wireframe">
+
+                    <div class="split-box">
+                        <div class="column">
+                            <p class="description">Tablet</p>
+                            <img class="half" src="./images/lowfi-tablet.png" alt="Low Fidelity Tablet Wireframe">
+                        </div>
+
+                        <div class="column">
+                            <p class="description">Mobile</p>
+                            <img class="half" src="./images/lowfi-mobile.png" alt="Low Fidelity Mobile Wireframe">
+                        </div>
+                    </div>
+
+                    <p>I chose to include a flag to show if the story is a manga, manhua, or manhwa instead of writing it out, because the words are very
+                    similar and a flag is more clear.</p>
+
+                    <!-- Hifi -->
+                    <h2>High-Fidelity Prototype</h2>
+                    <p>I then thought about colors, font, and text and created a set of high-fidelity prototypes using Figma.</p>
+
+                    <p class="description">Desktop</p>
+                    <img class="redesign-img" src="./images/desktop.png" alt="High Fidelity Desktop Prototype">
+
+                    <div class="split-box">
+                        <div class="column">
+                            <p class="description">Tablet</p>
+                            <img src="./images/tablet.png" alt="High Fidelity Tablet Prototype">
+                        </div>
+
+                        <div class="column">
+                            <p class="description">Mobile</p>
+                            <img src="./images/mobile.png" alt="High Fidelity Mobile Prototype">
+                        </div>
+                    </div>
+
+                    <p class="description">Hamburger Menu can be opened on narrow screen like tablet or mobile.</p>
+                    <img class="redesign-img" src="./images/tablet-hamburger.png" alt="Hamburger Menu Prototype">
+
+                    <!-- Design Guide -->
+                    <h2>Style Guide</h2>
+
+                    <p>I created the following style guide to show the colors and visual interactions of the website</p>
+
+                    <img class="redesign-img" src="./images/styleguide.png" alt="Style Guide">
+
+                    <p>I chose to use orange, white, and grey as the color scheme of the website because I wanted the
+                    website to look light and warm. I thought it was important for a manhwa reading website to look
+                    warm and welcoming to encourage a good mood for reading, and also be simple and straightforward to
+                    help users easily consume the content or access information.</p>
+
+                </div>
+
+                <!-- Responsive Redesign -->
+                <div class="section">
+                    <h1>Responsive Redesign</h1>
+
+                    <p>Finally, I created a responsive webpage following the hi-fi prototypes and style guide.</p>
+
+                    <a class="weblink" href="./MANHWATOP/home.html">
+                    <button>View Project Website</button></a>
+
+                    <p>I thoroughly tested the website on various screen sizes and made sure the layout was still effective on desktop, tablet,
+                    and phone. Additionally, I tested 150% font size on Google Chrome and on my Mac settings. I found that large font size caused
+                    my full header menu to wrap text strangely, so I adjusted the width at which the website enters tablet mode and shows a
+                    hamburger menu instead to fix this. WAVE evaluation did not differ between screen sizes, I had some empty buttons and links on
+                    all screen sizes.</p>
+
+                    <p>I learned from this assignment how difficult compelete accessibility is to achieve. Even after many hours of studying the problems
+                    the original site had and redesigning it to fix them, I still ended up forgetting some button and link descriptive text. It is seemingly a
+                    simple, straightforward step to add alternative text to visual elements, but when there are so many it becomes easy to slip up and forget.
+                    I feel that part of this is due to a lack of education on accessibility. In my many years studying computer science, I have never been formally
+                    taught how to correctly make buttons and links accessible. Accessibility is extremely imporant, yet is not focused on nearly as in depth as
+                    more standard topics like how to code a javascript button or css flexbox.</p>
+
+                    <p>Images used on my site are from <a href="https://manhwatop.com/">MANHWATOP</a>, <a href="https://www.iconfinder.com/">iconfinder</a>, and
+                        <a href="https://fontawesome.com/">fontawesome.</a></p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

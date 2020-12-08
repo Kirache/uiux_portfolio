@@ -1,0 +1,52 @@
+/* Put your style information here! */
+img {
+	width: 80%;
+	height: auto;
+	align-self: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.sketch-images img {
+    width: 30vw;
+    height: 25vw
+}
+
+#subtasks {
+    font-size: 12pt;
+}
+
+#user3 {
+    font-size: 12pt;
+}
+
+#ycomb {
+    color: blue;
+    text-decoration: underline;
+}
+
+h1 {
+	width: 100%;
+	background-color: #EEDDDF;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.sub {
+    margin-left:2em;
+    margin-bottom: 20px;
+}
+
+.tab {
+    margin-left: 2em;
+}
+
+video {
+    width: 50vw;
+    height: 100%;
+}
