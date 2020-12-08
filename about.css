@@ -1,0 +1,26 @@
+#profile-picture {
+	width: 30%;
+	align-self: flex-start;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+p {
+	font-size: 12pt;
+}
+
+#links {
+	font-weight: 400;
+}
+
+.about {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+	#profile-picture {
+		width: 50%;
+	}
+}
