@@ -5,6 +5,14 @@ body {
 	font-weight: 300;
 }
 
+#arrow img {
+		width: 80%;
+		height: auto;
+		align-self: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+}
+
 a {
 	text-decoration: none;
 	color: black;

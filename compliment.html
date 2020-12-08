@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <h2 id="title">The Compliment Hub</h2>
-                <img id="webimage" src="./images/compliment.png"></img>
+                <img id="webimage" src="./images/complimenthub.png"></img>
                 <a class="weblink" id="first-weblink" href="http://ec2-18-222-67-212.us-east-2.compute.amazonaws.com:1234/en/">
                 <button>View Project Website</button></a>
             </div>
@@ -40,7 +40,7 @@
 						<li>Working closely with the client to match their vision</li>
 						<li>Interviewing users to understand their needs and expectations</li>
 						<li>Planning the project front-end and back-end architecture</li>
-						<li>Creating user flows to generate a user-centered design</li>
+						<li>Creating user flows and scenarios to generate a user-centered design</li>
 						<li>Developing and deploying the website</li>
 						<li>Performance and security testing</li>
 					</ul>
@@ -49,16 +49,30 @@
 					<h1>Working with the Client</h1>
 					<p>Our client was a postdoctoral research fellow from University of Chicago looking to "investigate the psychology of giving
 						and receiving compliments in different cultures."</p>
-					<p>RESEARCH QUESTIONS</p>
-					<p>Our team met frequently with our client to give updates and refine our work.</p>
+					<h2>Primary Research Questions</h2>
+					<ol>
+						<li>Compliment and happiness: Do compliments make people happy across cultures?</li>
+						<li>Undervaluing compliment: Do people across cultures underestimate the positive impact of compliments on their recipients? And overestimate how awkward/embarrassed/shy others will feel when receiving compliments?</li>
+					</ol>
+					<h2>Secondary Research Questions</h2>
+					<ol>
+						<li>Frequency of compliment-giving behavior: Do people in all cultures perceive a deficit of compliment-giving (compared to how often you think you should…, how often do you actually…)? How often do people give compliments in different cultures? Is behavior frequency correlated with interpersonal miscalibration?</li>
+						<li>What makes a good compliment in the eyes of the expressers and recipients?</li>
+						<li>Taxonomy of compliments: What do people find praiseworthy in different cultures? </li>
+					</ol>
+					<p>Our team met frequently with our client to give updates and refine our work. We worked closely with the client to
+					match her vision of the website and best help her achieve her research goal.</p>
 				</div>
 				<div class="section">
-					<h1>Initial Sketches</h1>
+					<h1>Initial Sketches and Scenario</h1>
 					<p>We created initial rough designs of the website. Here are some pages from our initial sketches : </p>
 					<div class="grid2">
 						<img class="design" src="./images/rough0.png"></img>
 						<img class="design" src="./images/rough1.png"></img>
 					</div>
+					<p>We also created a scenario of a user using the website to try to understand how
+						a user might interact with the website : </p>
+					<p id="scenario">Steven Reiss opens his email and sees that there is a compliment on a very nicely designed front side of a compliment card his friend sent him from The Compliment Hub. Then he clicks on a link, which brings up the website home page and a pop-up window with the compliment card. This makes him happy and he saves the compliment as an image. The pop-up also has a survey asking about how the compliment made Steven feel. He fills out the survey, consents to having the data used for research, submits, and closes the pop-up. Steven decides to send a compliment to his other friend, and clicks to send a compliment on the home page. He picks the theme of fashion for the compliment card and writes a compliment about his friend’s excellent taste in button down shirts. He picks blue as his background color. He completes a survey about how he feels and consents to having this data used for research. He enters in his friend’s email and is taken to a confirmation page which has social media share buttons. He shares the compliment on Facebook and tags his friend, then closes the website. </p>
 
 				</div>
 				<div class="section">
@@ -97,8 +111,60 @@
 					<p>Ultimately, our client chose to use a design from an outside designer, which we implemented in HTML and CSS.</p>
 				</div>
 				<div class="section">
+					<h1>Development</h1>
+					<p>We developed the website using a HTML and Javascript frontend, and a Node.js and MySQL backend.
+					I worked mostly on the frontend, implementing the design given to us and creating the interactive elements,
+					while my teammates focused more on the backend and connecting the pieces. We helped each other when necessary
+					and worked together well as team, and all contributed to various parts of the project.</p>
+					<div class="pink">
+						<br><br>
+					<h2>Deployed Website</h2>
+					<img id="home-image" src="./images/complimenthub.png"></img>
+					<img id="about-image" src="./images/complimentfinal.png"></img>
+					<br>
+					<a class="weblink" href="http://ec2-18-222-67-212.us-east-2.compute.amazonaws.com:1234/en/">
+					<button>View Project Website</button></a>
+					<br>
+					<br>
+					</div>
+				</div>
+				<div class="section">
 					<h1>Performance and Security Testing</h1>
-					<p></p>
+					<p>After creating the website, we performed tests to evaluate usability and security.</p>
+					<p>Our project website, The Compliment Hub, is very usability and front-end focused,
+						so we prioritized HTML/CSS validation, performance testing, and front-end testing. However,
+						because we still used a backend and because we wanted to protect our database and users, we did
+						backend and security testing as well.</p>
+					<h2>HTML/CSS Validation</h2>
+					<p>We used WC3 on many website pages, which uncovered that our website was missing many accessibility elements
+						such as lang tags and text alternatives for images. We then added these elements to improve accessibility.
+						We also discovered we had invalid tags, which we removed afterwards. </p>
+					<h2>Performance Testing</h2>
+					<p>We also ran our website’s homepage through GTmetrix, and we received a Pagespeed Score of 98% (A), as well as
+						a YSlow Score of 96% (A). This was very positive, and it showed that our group had done a good job with
+						performance speed. </p>
+					<h2>Frontend Testing </h2>
+					<p>We found the edge case of when the user jumps straight to submitting a compliment card without entering any
+						information, it leads to our kindness map not loading. We broke down our code into smaller, more manageable
+						functions and used gunit testing, and discovered that our problem was that we did not handle invalid or empty
+						fields in our kindness map displaying algorithm. We added checks into our code, and also made it so the user
+						cannot submit a compliment without entering at least the very basic information.</p>
+					<h2>Backend Testing</h2>
+					<p>We wrote a basic backend testing suite with Jasmine, and with it, discovered that our routing for the contact
+						selectively worked; it did not work when going from any page other than the home page because it was a href on
+						the homepage. This was an edge case, and we fixed this with a response.redirect to home.html. It also discovered
+						that the algorithm on the backend for computing “kindness chains” returned true in the test case when it should
+						have returned false, leading us to fix that bug as well. </p>
+					<h2>Security Testing</h2>
+					<p>To test this, we manually tried some common attacks such as JS injections, SQL injections, and Cross-Site scripting.
+						We discovered that we were vulnerable to injection attacks, so we made our application more robust by validating user
+						inputs on the server side before executing functions requiring those inputs. This protects it from most injection
+						attacks as opposed to more specific threats. </p>
+				</div>
+				<div class="section">
+					<h1>Takeaways</h1>
+					<p>I learned a lot throughout this project about interacting with a client, designing for usability, website code
+					development, and security.</p>
 				</div>
 			</div>
 		</div>

@@ -17,11 +17,15 @@ h2 {
 }
 
 h3 {
-	
+
 }
 
 li {
 	margin-bottom: 15px;
+}
+
+#title {
+	margin-bottom: 0px;
 }
 
 .image {
@@ -55,6 +59,7 @@ li {
 	width: 80%;
 	max-width: 1000px;
 	margin: 90px auto;
+	margin-top: 40px;
 	justify-content: center;
 	background-color: white;
 	flex-direction: column;

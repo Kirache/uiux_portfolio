@@ -10,6 +10,14 @@ li {
 	line-height: 150%;
 }
 
+.pink {
+	background-color: #EEDDDF;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 #process {
 	background-color: #EEDDDF;
 	padding-bottom: 50px;
@@ -17,6 +25,19 @@ li {
 
 #userflow {
 	width: 100%;
+}
+
+#scenario {
+	font-size: 12pt;
+}
+
+#home-image {
+	width: 100%;
+}
+
+#about-image {
+	width: 70%;
+	align-self: center;
 }
 
 .design {
