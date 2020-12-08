@@ -202,3 +202,13 @@ button {
 		padding-right: 10px;
 	}
 }
+
+@media screen and (max-width: 460px) {
+	#name {
+		display: none;
+	}
+	.navbar {
+		align-self: center;
+		margin-left: 0px;
+	}
+}

@@ -25,6 +25,10 @@ li {
 	margin-bottom: 10px;
 }
 
+#title {
+	line-height: 110%;
+}
+
 .blue-box {
 	background-color: #f0e4e5;
 	padding: 6px 6px;
