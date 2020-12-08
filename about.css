@@ -22,5 +22,9 @@ p {
 @media only screen and (max-width: 600px) {
 	#profile-picture {
 		width: 50%;
+		align-self: center;
+	}
+	.about {
+		flex-direction: column;
 	}
 }
